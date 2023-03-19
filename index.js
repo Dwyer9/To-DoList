@@ -297,3 +297,4 @@ window.addEventListener('click', (e) => {
 
 renderTaskArr(tasks);
 renderNotesArr(notes);
+console.log(tasks);
