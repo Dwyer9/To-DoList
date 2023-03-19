@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <div class="header"><h1>To Do List</h1></div>
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-item active" data-project="all">All</li>
+            <li class="menu-item" data-project="work">Work</li>
+            <li class="menu-item" data-project="home">Home</li>
+            <li class="menu-item" data-project="friends">Friends</li>
+            <li class="menu-item" data-project="family">Family</li>
+            <li class="menu-item" data-project="exercise">Exercise</li>
+            <li class="menu-item notes-menu" data-project="notes">Notes</li>
+          </ul>
+          <button class="new-btn">Add</button>
+        </div>
+        <div class="render-container">
+        <div class="task-container hidden">
+          <!-- <div class="task">
+            <div class="task-left">
+              <input type="checkbox" />
+              <span class="task-name"
+                >Go to the gym and do a lot of stuff there</span
+              >
+            </div>
+            <div class="task-right">
+              <span class="task-date">24/11/23</span>
+              <span class="task-edit">Edit</span>
+              <span class="task-delete">Delete</span>
+            </div>
+          </div>
+          <div class="task">
+            <div class="task-left">
+              <input type="checkbox" />
+              <span class="task-name"
+                >Go to the gym and do a lot of stuff there</span
+              >
+            </div>
+            <div class="task-right">
+              <span class="task-date">24/11/23</span>
+              <span class="task-edit">Edit</span>
+              <span class="task-delete">Delete</span>
+            </div>
+          </div>
+          <div class="task">
+            <div class="task-left">
+              <input type="checkbox" />
+              <span class="task-name"
+                >Go to the gym and do a lot of stuff there</span
+              >
+            </div>
+            <div class="task-right">
+              <span class="task-date">24/11/23</span>
+              <span class="task-edit">Edit</span>
+              <span class="task-delete">Delete</span>
+            </div>
+          </div> -->
+        </div>
+        <div class="notes-container hidden">
+          <!-- <div class="notes-item">
+            <span class="note-title">Sample note</span>
+            <img src="./bde675c38d54979f589e.svg" alt="edit-icon" class="note-delete-btn">
+            <span class="note-details">Sample note details. What you need to keep track of</span>
+          </div>
+          <div class="notes-item">
+            <span class="note-title">Sample note</span>
+            <span class="note-details">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sed corporis culpa doloremque velit itaque iusto dolorum, maiores provident quia modi. Odit vel itaque repellendus illo pariatur mollitia ea omnis?</span>
+          </div>
+          <div class="notes-item">
+            <span class="note-title">Sample note</span>
+            <span class="note-details">Sample note details. What you need to keep track of</span>
+          </div>
+          <div class="notes-item">
+            <span class="note-title">Sample note</span>
+            <span class="note-details">Sample note details. What you need to keep track of</span>
+          </div>
+          <div class="notes-item">
+            <span class="note-title">Sample note</span>
+            <span class="note-details">Sample note details. What you need to keep track of</span>
+          </div> -->
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="add-item hidden">
+      <form class="new-item-form" action="#"> 
+        <div class="type-selector">
+          <span class="type-select task-select active">Task</span>
+          <span class="type-select project-select">Area</span>
+          <span class="type-select note-select">Note</span>
+        </div>
+        <div class="task-form">
+        <div class="form-input">
+          <label for="task-title">Title</label>
+          <input
+            type="text"
+            class="task-title-input input-text"
+            id="task-title"
+          />
+        </div>
+        <div class="form-input">
+          <label for="due-date">Due Date</label>
+          <input
+            type="date"
+            class="due-date-input input-text"
+            id="due-date"
+          />
+        </div>
+        <div class="form-input">
+          <label for="type">Priority</label>
+          <select class="task-priority-input input-text">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div> 
+        <div class="form-input">
+          <label for="type">Area</label>
+          <select class="task-project-input input-text">
+            <option value="work">Work</option>
+            <option value="home">Home</option>
+            <option value="friends">Friends</option>
+            <option value="family">Family</option>
+            <option value="exercise">Exercise</option>
+          </select>
+        </div>   
+      </div>
+      <div class="project-form hidden">
+        <div class="form-input">
+          <label for="project-name">Name</label>
+          <input
+            type="text"
+            class="project-name-input input-text"
+            id="project-name"
+          />
+        </div>
+      </div>
+      <div class="note-form hidden">
+        <div class="form-input">
+          <label for="note-title">Title</label>
+          <input
+            type="text"
+            class="note-title-input input-text"
+            id="note-title"
+          />
+        </div>
+        <div class="form-input">
+          <label for="note-details">Details</label>
+          <textarea class="note-details-input"
+          id="note-details" rows="8" cols="50" >
+          </textarea>
+          
+        </div>
+      </div>
+        <button class="submit-btn">Add</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
